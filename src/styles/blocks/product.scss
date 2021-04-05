@@ -6,9 +6,19 @@
 
   &__image {
     display: block;
+    box-sizing: content-box;
     width: 160px;
     height: 134px;
-    margin: 15px 5px 45px;
+    margin: 0 2px 32px;
+    padding: 12px 0 10px;
+    border: 3px solid transparent;
+    transition: 0.4s;
+    transition-timing-function: linear;
+
+    &:hover {
+      transform: scale(1.2);
+      border: 3px solid #f3f3f3;
+    }
   }
 
   &__name {
